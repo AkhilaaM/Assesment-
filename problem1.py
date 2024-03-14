@@ -29,6 +29,14 @@ class VersionControl:
                     content[index] = value
                 else:
                     content.append(value)
-        return ''.join(content)
+        return ''.join(content) 
+# Example usage
+vc = VersionControl()
+vc.add_version("Hello world!")
+vc.add_version("Hello world!!")
+vc.add_version("Hello world!!!")
+print(vc.get_version(0))  # Base version
+print(vc.get_version(1))  # First version with deltas
+print(vc.get_version(2))  # Second version with deltas
 
 
