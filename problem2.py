@@ -29,3 +29,5 @@ def external_word_count(file_path, output_path, chunk_size=10**7):
             output_file.write(line)
         for file in sorted_files:
             file.close()
+    # Example usage
+external_word_count('large_text_file.txt', 'word_count_output.txt')
